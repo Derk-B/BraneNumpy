@@ -22,20 +22,60 @@ actions:
   'zeros':
     command:
       args:
-      - zeros
+      - zeros 
     input:
     - name: shape
+      type: string
+    - name: dtype
+      type: string
+    - name: order
       type: string
     output:
     - name: output
       type: IntermediateResult
-  'test':
+  'sum':
     command:
       args:
-      - test
+      - sum
     input:
-    - name: input
-      type: string
+    - name: array
+      type: '[int]'
     output:
-    - name: output
-      type: string
+    - name: sum
+      type: int
+  'dot':
+    command:
+      args:
+      - dot
+    input:
+    - name: first
+      type: '[int]'
+    - name: second
+      type: '[int]'
+    output:
+    - name: dot
+      type: int
+  'reshape':
+    command:
+      args:
+      - reshape
+    input:
+    - name: array
+      type: '[int]'
+    - name: shape
+      type: '[int]'
+    output:
+    - name: reshaped
+      type: IntermediateResult
+  'add':
+    command:
+      args:
+      - add
+    input:
+    - name: first
+      type: '[int]'
+    - name: second
+      type: '[int]'
+    output:
+    - name: add
+      type: IntermediateResult

@@ -1,11 +1,25 @@
-// import numpy
-
-// on "worker150" {
-//     let data := [2, 3];
-//     let result := zeros(data);
-//     println(result);
-// }
 import numpy;
+
 let data := "[2, 3]";
-let result := zeros(data);
+let dtype := "float";
+let order := "C";
+let result := zeros(data, dtype, order);
+
 println(result);
+
+let input := [1, 2, 3, 4];
+let s := sum(input);
+println(s);
+
+let first := [1, 2, 3, 4];
+let second := [1, 2, 3, 4];
+let d := dot(first, second);
+println(d);
+
+let array_to_reshape := [1, 2, 3, 4];
+let shape := [2, 2];
+let reshaped_array := reshape(array_to_reshape, shape);
+println(reshaped_array);
+
+let added := add(first, second);
+println(added);
