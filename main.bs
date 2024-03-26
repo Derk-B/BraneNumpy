@@ -1,0 +1,11 @@
+// import numpy
+
+// on "worker150" {
+//     let data := [2, 3];
+//     let result := zeros(data);
+//     println(result);
+// }
+import numpy;
+let data := "[2, 3]";
+let result := zeros(data);
+println(result);

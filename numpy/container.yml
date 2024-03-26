@@ -1,0 +1,41 @@
+# Container.yml for the hello_world package
+name: numpy
+version: 1.0.0
+kind: ecu
+
+files:
+  - main.py
+
+entrypoint:
+  kind: task
+  exec: main.py
+
+dependencies:
+  - python3
+  - python3-yaml
+  - python3-pip
+
+install:
+  - pip3 install numpy==1.22.3
+
+actions:
+  'zeros':
+    command:
+      args:
+      - zeros
+    input:
+    - name: shape
+      type: string
+    output:
+    - name: output
+      type: IntermediateResult
+  'test':
+    command:
+      args:
+      - test
+    input:
+    - name: input
+      type: string
+    output:
+    - name: output
+      type: string
