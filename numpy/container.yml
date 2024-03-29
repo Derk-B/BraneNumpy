@@ -25,7 +25,7 @@ actions:
       - zeros 
     input:
     - name: shape
-      type: string
+      type: '[int]'
     output:
     - name: output
       type: IntermediateResult
@@ -70,7 +70,7 @@ actions:
     input:
     - name: first
       type: '[int]'
-    - name: secon
+    - name: second
       type: '[int]'
     output:
     - name: add

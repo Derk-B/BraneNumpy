@@ -6,10 +6,6 @@ import os
 import numpy as np
 import ast
 import yaml
-
-def test():
-    input_data = os.getenv("INPUT").replace('"', '')
-    print("output: '" + input_data + "'")
     
 def zeros():
     shape = ast.literal_eval(os.getenv("SHAPE").replace('"', ''))

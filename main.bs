@@ -1,9 +1,7 @@
 import numpy;
 
-let data := "[2, 3]";
-let dtype := "float";
-let order := "C";
-let result := zeros(data, dtype, order);
+let data := [2, 3];
+let result := zeros(data);
 
 println(result);
 
