@@ -13,9 +13,7 @@ def test():
     
 def zeros():
     shape = ast.literal_eval(os.getenv("SHAPE").replace('"', ''))
-    dtype = os.getenv("DTYPE").replace('"', '')
-    order = os.getenv("ORDER").replace('"', '')
-    arr = np.zeros(shape, dtype, order)
+    arr = np.zeros(shape)
     yaml.dump({"output": arr})
 
 def array_sum():
