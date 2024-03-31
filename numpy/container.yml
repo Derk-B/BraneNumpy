@@ -75,3 +75,15 @@ actions:
     output:
       - name: add
         type: IntermediateResult
+  "subtract":
+    command:
+      args:
+        - subtract
+    input:
+      - name: first
+        type: "[int]"
+      - name: second
+        type: "[int]"
+    output:
+      - name: subtract
+        type: IntermediateResult

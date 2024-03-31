@@ -41,6 +41,14 @@ def array_add():
     res = np.add(arr1, arr2)
     yaml.dump({'add': res})
 
+def array_subtract():
+    env1 = os.getenv("FIRST")
+    env2 = os.getenv("SECOND")
+    arr1 = ast.literal_eval(env1)
+    arr2 = ast.literal_eval(env2)
+    res = np.subtract(arr1, arr2)
+    yaml.dump({'subtract': res})
+
 
 if __name__ == "__main__":
     # Make sure that at least one argument is given, that is either 'encode' or 'decode'
@@ -62,7 +70,5 @@ if __name__ == "__main__":
         array_reshape()
     elif command == 'add':
         array_add()
-    
-    # Done!
-    # print("output: '" + str(cmds) + "'")
-    # print("output: '" + cmds + "'")
+    elif command == 'subtract':
+        array_subtract()
