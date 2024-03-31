@@ -1,26 +1,31 @@
 import numpy;
 
+// zeros
 let data := [2, 3];
 let result := zeros(data);
-
 println(result);
 
+// sum
 let input := [1, 2, 3, 4];
 let s := sum(input);
 println(s);
 
+// dot
 let first := [1, 2, 3, 4];
 let second := [1, 2, 3, 4];
 let d := dot(first, second);
 println(d);
 
+// reshape
 let array_to_reshape := [1, 2, 3, 4];
 let shape := [2, 2];
 let reshaped_array := reshape(array_to_reshape, shape);
 println(reshaped_array);
 
+// add
 let added := add(first, second);
 println(added);
 
+// subtract
 let subtracted := subtract(first, second);
 println(subtracted);
