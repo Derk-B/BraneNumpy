@@ -19,59 +19,59 @@ install:
   - pip3 install numpy==1.22.3
 
 actions:
-  'zeros':
+  "zeros":
     command:
       args:
-      - zeros 
+        - zeros
     input:
-    - name: shape
-      type: '[int]'
+      - name: shape
+        type: "[int]"
     output:
-    - name: output
-      type: IntermediateResult
-  'sum':
+      - name: output
+        type: IntermediateResult
+  "sum":
     command:
       args:
-      - sum
+        - sum
     input:
-    - name: array
-      type: '[int]'
+      - name: array
+        type: "[int]"
     output:
-    - name: sum
-      type: int
-  'dot':
+      - name: sum
+        type: int
+  "dot":
     command:
       args:
-      - dot
+        - dot
     input:
-    - name: first
-      type: '[int]'
-    - name: second
-      type: '[int]'
+      - name: first
+        type: "[int]"
+      - name: second
+        type: "[int]"
     output:
-    - name: dot
-      type: int
-  'reshape':
+      - name: dot
+        type: int
+  "reshape":
     command:
       args:
-      - reshape
+        - reshape
     input:
-    - name: array
-      type: '[int]'
-    - name: shape
-      type: '[int]'
+      - name: array
+        type: "[int]"
+      - name: shape
+        type: "[int]"
     output:
-    - name: reshaped
-      type: IntermediateResult
-  'add':
+      - name: reshaped
+        type: IntermediateResult
+  "add":
     command:
       args:
-      - add
+        - add
     input:
-    - name: first
-      type: '[int]'
-    - name: second
-      type: '[int]'
+      - name: first
+        type: "[int]"
+      - name: second
+        type: "[int]"
     output:
-    - name: add
-      type: IntermediateResult
+      - name: add
+        type: IntermediateResult
