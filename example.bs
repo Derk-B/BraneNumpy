@@ -21,3 +21,6 @@ println(reshaped_array);
 
 let added := add(first, second);
 println(added);
+
+let subtracted := subtract(first, second);
+println(subtracted);
